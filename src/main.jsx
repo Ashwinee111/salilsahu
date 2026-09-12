@@ -215,7 +215,7 @@ function App() {
           <h2>I read every message.</h2>
           <p>If something here made you think, disagree, or smile, to talk, I would love to hear from you.</p>
           <div className="social-links">
-            <a href="mailto:hello@example.com" className="social-link">
+            <a href="mailto:100galaxy@gmail.com" className="social-link">
               Email ↗
             </a>
             <a href="https://www.linkedin.com/in/salilksahu/" target="_blank" rel="noopener noreferrer" className="social-link">
