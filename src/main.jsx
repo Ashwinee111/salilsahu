@@ -9,19 +9,57 @@ const Link = ({ children, href = '#', className = '', target, rel }) => (
   </a>
 );
 
-const books = [
-  'Atomic Habits',
-  'Thinking, Fast and Slow',
-  'Deep Work',
-  'Sapiens',
-  'Dune',
-  'The 5 AM Club',
-  'Range',
-  'The Psychology of Money',
-  'Ikigai',
-  'Dopamine Nation',
-  'The Almanack of Naval Ravikant',
-  'Grit',
+const detailedBooks = [
+  {
+    title: 'Thinking, Fast and Slow',
+    author: 'Daniel Kahneman',
+    desc: 'The best one for understanding how distorted our thinking process is, even though we believe it is rational and unbiased.',
+  },
+  {
+    title: 'The Discovery of India',
+    author: 'Jawaharlal Nehru',
+    desc: "A magisterial, comprehensive exploration of India's history, philosophy, culture, and civilisational identity that captures India's essential pluralistic foundations.",
+  },
+  {
+    title: 'Sapiens',
+    author: 'Yuval Noah Harari',
+    desc: "Shows how the common stories we believe in — money, religion, duty and more — have played a foundational role in humanity's journey from an insignificant species to the dominant one. A book that changed the way the world understood itself.",
+  },
+  {
+    title: 'Outlive',
+    author: 'Peter Attia',
+    desc: 'Presents a scientific framework for extending both lifespan and healthspan through exercise, nutrition, sleep, and emotional well-being. Through practical steps, it makes the process clear and doable.',
+  },
+  {
+    title: 'The Effective Executive',
+    author: 'Peter Drucker',
+    desc: 'A classic. Leaders need to become good managers, and this is as good a guide as any — how to manage time, set priorities, build on strengths, and make sound decisions. Drucker treats effectiveness as a learnable discipline.',
+  },
+  {
+    title: 'India After Gandhi',
+    author: 'Ramachandra Guha',
+    desc: 'Illiteracy, poverty, ethnic divisions — very few gave the Indian republic a chance of surviving in 1947. Guha captures the political, social, and economic transformation without missing a beat. A must-read to understand India.',
+  },
+  {
+    title: 'The Selfish Gene',
+    author: 'Richard Dawkins',
+    desc: 'Our behaviour and actions are driven by the fundamental force of genes trying to replicate themselves. This book reframes your view of life and morality — and introduced the idea of the “meme” as the unit through which culture spreads.',
+  },
+  {
+    title: 'The God Delusion',
+    author: 'Richard Dawkins',
+    desc: 'Dawkins relentlessly questions the idea of God and suggests science and reason as a sufficient foundation for a moral life.',
+  },
+  {
+    title: 'One Hundred Years of Solitude',
+    author: 'Gabriel García Márquez',
+    desc: 'The magic realism is mesmerising. Across several generations of the Buendía family in the mythical town of Macondo, it explores ambition, violence, memory, the cyclical nature of history—and the infinite power of love.',
+  },
+  {
+    title: 'The Spirit of Indian Painting',
+    author: 'B. N. Goswamy',
+    desc: 'An authoritative book on Indian miniatures; it shows the beauty of these masterpieces and makes you fall in love with them. The imagination, symbolism and craftsmanship behind them are as extraordinary as in any European tradition.',
+  },
 ];
 
 function App() {
@@ -35,33 +73,20 @@ function App() {
       </header>
 
       <main id="top" className="container">
-        {/* HERO */}
-        <section className="hero">
-          <h1 className="hero-title">
-            I build, write, read, run
-            <br />
-            and occasionally get distracted by
-            <br />
-            interesting questions.
-          </h1>
-          <div className="hero-meta">
-            <span>BASED IN INDIA · CURIOUS BY DEFAULT</span>
-            <Link href="https://www.linkedin.com/in/salilksahu/" target="_blank" rel="noopener noreferrer">LinkedIn</Link>
-          </div>
-        </section>
-
-        <div className="rule" />
-
         {/* 01 ABOUT ME */}
         <section className="section about">
           <div className="eyebrow">01  ABOUT ME</div>
           <div className="about-grid">
-            <img src="/images/about.jpeg" alt="Salil Sahu" className="portrait" />
+            <img src="/images/IMG_9.jpg" alt="Salil Sahu" className="portrait" />
             <div className="about-content">
-              <h2>I like making useful things and asking better questions.</h2>
+              <h2>
+                I have worked in corporates, both Indian and multinational, in a variety of positions, including CEO. One day I realised I wanted to do something more— so I set up a healthtech venture.
+              </h2>
               <p>
-                Over the years, that has meant building products, writing about health and leadership,
-                and finding the thread between ideas that seem unrelated at first.
+                I enjoy exploring other things too, in pursuit of what I would call a fulfilling life. I have written a book on leadership, run full marathons, cycled long-distance brevets, quizzed, and read far more than my career needed.
+              </p>
+              <p>
+                This page is everything in one place.
               </p>
               <Link href="https://www.linkedin.com/in/salilksahu/" target="_blank" rel="noopener noreferrer">More on LinkedIn</Link>
             </div>
@@ -74,11 +99,13 @@ function App() {
         <section className="section project-row">
           <div className="eyebrow">02  HAPPILY HEALTH</div>
           <div className="project-grid">
-            <img src="/images/IMG_6.JPG" alt="Happily Health" className="book-cover-img" />
+            <img src="/images/IMG_8.png" alt="Happily Health" className="book-cover-img" />
             <div className="project-content">
               <p>
-                A small attempt to make everyday health feel less like a spreadsheet and more like a life.
-                Happily Health brings simple, thoughtful nudges to the routines that keep us well.
+                Everyone knows what good health requires – exercise, diet, emotional health. Not many follow the simple steps for that.
+              </p>
+              <p>
+                That gap in everyday lifestyle — between knowing and doing — is what Happily Health works on.
               </p>
               <Link href="#">Explore Happily Health</Link>
             </div>
@@ -93,11 +120,13 @@ function App() {
           <div className="project-grid">
             <img src="/images/IMG_5.jpg" alt="The Healthspan Code" className="book-cover-img" />
             <div className="project-content">
+              <div className="project-date">COMING OCTOBER 2026</div>
               <h2>
-                A forthcoming book about the practical science of staying capable, curious and alive to the world for
-                longer.
+                A book co-written with Dr Amitav Mohanty, a physician with three decades of clinical practice. It makes the science of living healthier and longer accessible.
               </h2>
-              <p>Not a manual for perfection. More a collection of ideas, experiments and honest reminders.</p>
+              <p>
+                Written for the Indian reader first on our bodies, our food, our risks. It has been endorsed by titans of Indian healthcare, including Dr Devi Shetty and Dr Ramakant Panda.
+              </p>
               <Link href="#">Get notified</Link>
             </div>
           </div>
@@ -112,12 +141,10 @@ function App() {
             <img src="/images/Leader_book.jpg" alt="We The Leaders" className="book-cover-img" />
             <div className="project-content">
               <h2>
-                Leadership is less about having the loudest answer and more about making it easier for other people to do
-                their best work.
+                Since I started working as a leader — uncertain and unprepared — the complexity of leadership has fascinated me.
               </h2>
               <p>
-                That idea runs through <em>We The Leaders</em> and <em>leadnow.blog</em> — two places for stories, tools
-                and generous conversations.
+                In 2018 I wrote a book that simplifies leadership basics: <em>We The Leaders</em> (Himalaya Publishing House). I keep exploring the subject in my blog, <em>leadnow.blog</em>.
               </p>
               <div className="project-links">
                 <Link href="https://www.amazon.in/We-Leaders-Sahu-Salil/dp/9352993683/" target="_blank" rel="noopener noreferrer">Amazon</Link>
@@ -136,8 +163,14 @@ function App() {
             <img src="/images/IMG_3.PNG" alt="Think Sharper" className="book-cover-img" />
             <div className="project-content">
               <h2>
-                A compact eBook for clearer thinking, better decisions and fewer meetings that should have been emails.
+                Evolution equipped us with fast, instinctive shortcuts — brilliant for dodging predators, unreliable for modern decisions with long-term consequences.
               </h2>
+              <p>
+                Add a daily flood of information, much of it designed to mislead, and clear thinking becomes a survival skill.
+              </p>
+              <p>
+                This short eBook alerts us to the cognitive errors we all make and helps us to think better.
+              </p>
               <Link href="#">Find it on Amazon</Link>
             </div>
           </div>
@@ -151,12 +184,10 @@ function App() {
           <div className="project-grid">
             <img src="/images/IMG_2.PNG" alt="Curious Elephant" className="book-cover-img" />
             <div className="project-content">
-              <h2>A corner of the internet for interesting questions, small discoveries and the joy of noticing things.</h2>
-              <p>
-                Curious Elephant is where I share what makes me pause — without pretending every thought needs to become a
-                lesson.
-              </p>
-              <Link href="#">FOLLOW CURIOUS ELEPHANT</Link>
+              <h2>
+                A fun passion project on Instagram — posts with ideas from science, history and psychology.
+              </h2>
+              <Link href="https://www.instagram.com/elephant.curious?stkn=MW5qbmMybXZreG9qbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">FOLLOW CURIOUS ELEPHANT</Link>
             </div>
           </div>
         </section>
@@ -169,40 +200,40 @@ function App() {
           <div className="project-grid">
             <img src="/images/cycle.jpg" alt="Cycling landscape" className="book-cover-img object-top" />
             <div className="project-content">
+              <h2>
+                Full marathons and several halves. Cycling brevets and intercity rides.
+              </h2>
               <p>
-                When I am not at a desk, I am usually running, cycling a little farther than planned, riding a brevet, or
-                trying to remember the answer on BBC Mastermind.
+                This was the initial inspiration for my healthtech foray.
               </p>
-              <p>These are useful ways to be bad at something in public — and keep going anyway.</p>
             </div>
           </div>
         </section>
 
         <div className="rule" />
 
-        {/* 08 READING */}
-        <section className="section reading">
-          <div className="eyebrow">08  READING</div>
-          <div className="reading-grid">
-            <div className="reading-left">
-              <h2>
-                A shelf in progress.
-                <br />
-                These books have
-                <br />
-                changed how I see work,
-                <br />
-                people or the long walk
-                <br />
-                home.
-              </h2>
+        {/* 08 FROM MY LIBRARY */}
+        <section className="section project-row">
+          <div className="eyebrow">08  FROM MY LIBRARY</div>
+          <div className="project-grid">
+            <div className="sticky-portrait">
+              <img src="/images/IMG_10.jpg" alt="From My Library" className="book-cover-img" />
             </div>
-            <div className="book-list">
-              {books.map((book, idx) => (
-                <div key={idx} className="book-item">
-                  {book}
-                </div>
-              ))}
+            <div className="project-content">
+              <p className="library-intro">
+                For as long as I can remember, I have been a ravenous reader of whatever I could find — it even helped me land in the BBC Mastermind quiz. Here are some of the books I have savoured:
+              </p>
+              <div className="detailed-book-list">
+                {detailedBooks.map((book, idx) => (
+                  <div key={idx} className="detailed-book-item">
+                    <div className="book-title-row">
+                      <span className="book-title">{book.title}</span>
+                      <span className="book-author">— {book.author}</span>
+                    </div>
+                    <p className="book-desc">{book.desc}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -221,7 +252,7 @@ function App() {
             <a href="https://www.linkedin.com/in/salilksahu/" target="_blank" rel="noopener noreferrer" className="social-link">
               LinkedIn ↗
             </a>
-            <a href="#" className="social-link">
+            <a href="https://www.instagram.com/elephant.curious?stkn=MW5qbmMybXZreG9qbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="social-link">
               Instagram ↗
             </a>
           </div>
