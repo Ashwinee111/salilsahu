@@ -280,23 +280,19 @@ function App() {
         <section id="connect" className="section connect">
           <div className="eyebrow">09  CONNECT</div>
           <h2>Let's connect.</h2>
-          <div className="social-links">
-            <a href="mailto:100galaxy@gmail.com" className="social-link">
-              Email ↗
-            </a>
-            <a href="https://www.linkedin.com/in/salilksahu/" target="_blank" rel="noopener noreferrer" className="social-link">
-              LinkedIn ↗
-            </a>
+          <div className="connect-footer-row">
+            <div className="social-links">
+              <a href="mailto:100galaxy@gmail.com" className="social-link">
+                Email ↗
+              </a>
+              <a href="https://www.linkedin.com/in/salilksahu/" target="_blank" rel="noopener noreferrer" className="social-link">
+                LinkedIn ↗
+              </a>
+            </div>
+            <span className="copyright-text">© 2025 SALIL SAHU</span>
           </div>
         </section>
       </main>
-
-      <footer className="footer container">
-        <span>© 2025 SALIL SAHU</span>
-        <a href="#top" className="link-subtle">
-          MADE WITH CURIOSITY ↗
-        </a>
-      </footer>
       <ScrollToTop />
     </div>
   );

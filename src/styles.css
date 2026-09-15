@@ -154,7 +154,7 @@ body {
 
 .about-content h2 {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.45;
   letter-spacing: -0.01em;
@@ -294,7 +294,7 @@ body {
 
 .project-content h2 {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.45;
   letter-spacing: -0.01em;
@@ -336,7 +336,7 @@ body {
 
 .elephant-header h2 {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.45;
   letter-spacing: -0.01em;
@@ -457,7 +457,7 @@ body {
 
 .connect h2 {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.015em;
@@ -472,6 +472,14 @@ body {
   color: var(--color-body);
   max-width: 480px;
   margin-bottom: 24px;
+}
+
+.connect-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .social-links {
@@ -494,13 +502,7 @@ body {
   opacity: 0.7;
 }
 
-/* Footer */
-.footer {
-  border-top: 1px solid var(--color-rule);
-  padding: 36px 0 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.copyright-text {
   font-family: var(--font-mono);
   font-size: 10px;
   font-weight: 400;
@@ -577,11 +579,11 @@ body {
   .project-content h2,
   .elephant-header h2,
   .reading-left h2 {
-    font-size: 24px;
+    font-size: 15.5px;
   }
 
   .connect h2 {
-    font-size: 34px;
+    font-size: 18px;
   }
 }
 
@@ -652,8 +654,8 @@ body {
   .project-content h2,
   .elephant-header h2,
   .reading-left h2 {
-    font-size: 20px;
-    line-height: 1.18;
+    font-size: 14.5px;
+    line-height: 1.35;
   }
 
   .about-content p,
@@ -672,7 +674,7 @@ body {
   }
 
   .connect h2 {
-    font-size: 28px;
+    font-size: 16.5px;
   }
 
   .social-links,
