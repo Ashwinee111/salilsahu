@@ -196,7 +196,7 @@ function App() {
         <section className="section project-row">
           <div className="eyebrow">05  THINK SHARPER</div>
           <div className="project-grid">
-            <img src="/images/IMG_3.PNG" alt="Think Sharper" className="book-cover-img" />
+            <img src="/images/IMG_3.PNG" alt="Think Sharper" className="square-post-img" />
             <div className="project-content">
               <h2>
                 Evolution equipped us with fast, instinctive shortcuts — brilliant for dodging predators, unreliable for modern decisions with long-term consequences.
@@ -218,7 +218,7 @@ function App() {
         <section className="section project-row">
           <div className="eyebrow">06  CURIOUS ELEPHANT</div>
           <div className="project-grid">
-            <img src="/images/IMG_2.PNG" alt="Curious Elephant" className="book-cover-img" />
+            <img src="/images/IMG_2.PNG" alt="Curious Elephant" className="square-post-img" />
             <div className="project-content">
               <h2>
                 A fun passion project on Instagram — posts with ideas from science, history and psychology.
@@ -276,20 +276,16 @@ function App() {
 
         <div className="rule" />
 
-        {/* 09 CONNECT */}
+        {/* 09  CONNECT */}
         <section id="connect" className="section connect">
           <div className="eyebrow">09  CONNECT</div>
-          <h2>I read every message.</h2>
-          <p>If something here made you think, disagree, or smile, to talk, I would love to hear from you.</p>
+          <h2>Let's connect.</h2>
           <div className="social-links">
             <a href="mailto:100galaxy@gmail.com" className="social-link">
               Email ↗
             </a>
             <a href="https://www.linkedin.com/in/salilksahu/" target="_blank" rel="noopener noreferrer" className="social-link">
               LinkedIn ↗
-            </a>
-            <a href="https://www.instagram.com/elephant.curious?stkn=MW5qbmMybXZreG9qbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="social-link">
-              Instagram ↗
             </a>
           </div>
         </section>
