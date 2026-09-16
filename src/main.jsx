@@ -111,7 +111,7 @@ function App() {
       <main id="top" className="container">
         {/* 01 ABOUT ME */}
         <section className="section about">
-          <div className="eyebrow">01  ABOUT ME</div>
+          <div className="eyebrow">ABOUT ME</div>
           <div className="about-grid">
             <img src="/images/IMG_9.jpg" alt="Salil Sahu" className="portrait" />
             <div className="about-content">
@@ -133,7 +133,7 @@ function App() {
 
         {/* 02 HAPPILY HEALTH */}
         <section className="section project-row">
-          <div className="eyebrow">02  HAPPILY HEALTH</div>
+          <div className="eyebrow">HAPPILY HEALTH</div>
           <div className="project-grid">
             <img src="/images/IMG_8.png" alt="Happily Health" className="book-cover-img" />
             <div className="project-content">
@@ -143,7 +143,7 @@ function App() {
               <p>
                 That gap in everyday lifestyle — between knowing and doing — is what Happily Health works on.
               </p>
-              <Link href="#">Explore Happily Health</Link>
+              {/* <Link href="#">Explore Happily Health</Link> */}
             </div>
           </div>
         </section>
@@ -152,7 +152,7 @@ function App() {
 
         {/* 03 THE HEALTHSPAN CODE */}
         <section className="section project-row">
-          <div className="eyebrow">03  THE HEALTHSPAN CODE</div>
+          <div className="eyebrow">THE HEALTHSPAN CODE</div>
           <div className="project-grid">
             <img src="/images/IMG_5.jpg" alt="The Healthspan Code" className="book-cover-img" />
             <div className="project-content">
@@ -163,7 +163,7 @@ function App() {
               <p>
                 Written for the Indian reader first on our bodies, our food, our risks. It has been endorsed by titans of Indian healthcare, including Dr Devi Shetty and Dr Ramakant Panda.
               </p>
-              <Link href="#">Get notified</Link>
+              {/* <Link href="#">Get notified</Link> */}
             </div>
           </div>
         </section>
@@ -172,7 +172,7 @@ function App() {
 
         {/* 04 LEADERSHIP */}
         <section className="section project-row">
-          <div className="eyebrow">04  LEADERSHIP</div>
+          <div className="eyebrow">LEADERSHIP</div>
           <div className="project-grid">
             <img src="/images/Leader_book.jpg" alt="We The Leaders" className="book-cover-img" />
             <div className="project-content">
@@ -194,9 +194,9 @@ function App() {
 
         {/* 05 THINK SHARPER */}
         <section className="section project-row">
-          <div className="eyebrow">05  THINK SHARPER</div>
+          <div className="eyebrow">THINK SHARPER</div>
           <div className="project-grid">
-            <img src="/images/IMG_3.PNG" alt="Think Sharper" className="square-post-img" />
+            <img src="/images/IMG_3.PNG" alt="Think Sharper" className="book-cover-img tall-cover-img" />
             <div className="project-content">
               <h2>
                 Evolution equipped us with fast, instinctive shortcuts — brilliant for dodging predators, unreliable for modern decisions with long-term consequences.
@@ -207,7 +207,7 @@ function App() {
               <p>
                 This short eBook alerts us to the cognitive errors we all make and helps us to think better.
               </p>
-              <Link href="#">Find it on Amazon</Link>
+              {/* <Link href="#">Find it on Amazon</Link> */}
             </div>
           </div>
         </section>
@@ -216,7 +216,7 @@ function App() {
 
         {/* 06 CURIOUS ELEPHANT */}
         <section className="section project-row">
-          <div className="eyebrow">06  CURIOUS ELEPHANT</div>
+          <div className="eyebrow">CURIOUS ELEPHANT</div>
           <div className="project-grid">
             <img src="/images/IMG_2.PNG" alt="Curious Elephant" className="square-post-img" />
             <div className="project-content">
@@ -232,7 +232,7 @@ function App() {
 
         {/* 07 RUNNING, CYCLING & QUIZZING */}
         <section className="section project-row">
-          <div className="eyebrow">07  RUNNING, CYCLING & QUIZZING</div>
+          <div className="eyebrow">RUNNING, CYCLING & QUIZZING</div>
           <div className="project-grid">
             <img src="/images/cycle.jpg" alt="Cycling landscape" className="book-cover-img object-top" />
             <div className="project-content">
@@ -250,7 +250,7 @@ function App() {
 
         {/* 08 FROM MY LIBRARY */}
         <section className="section project-row">
-          <div className="eyebrow">08  FROM MY LIBRARY</div>
+          <div className="eyebrow">FROM MY LIBRARY</div>
           <div className="project-grid">
             <div className="sticky-portrait">
               <img src="/images/IMG_10.jpg" alt="From My Library" className="book-cover-img" />
@@ -278,18 +278,18 @@ function App() {
 
         {/* 09  CONNECT */}
         <section id="connect" className="section connect">
-          <div className="eyebrow">09  CONNECT</div>
+          <div className="eyebrow">CONNECT</div>
           <h2>Let's connect.</h2>
           <div className="connect-footer-row">
             <div className="social-links">
               <a href="mailto:100galaxy@gmail.com" className="social-link">
-                Email ↗
+                100galaxy@gmail.com ↗
               </a>
               <a href="https://www.linkedin.com/in/salilksahu/" target="_blank" rel="noopener noreferrer" className="social-link">
                 LinkedIn ↗
               </a>
             </div>
-            <span className="copyright-text">© 2025 SALIL SAHU</span>
+            <span className="copyright-text">© {new Date().getFullYear()} SALIL SAHU</span>
           </div>
         </section>
       </main>
